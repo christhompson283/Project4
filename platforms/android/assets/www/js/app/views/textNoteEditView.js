@@ -138,6 +138,7 @@ define( [ "yasmf", "app/models/noteStorageSingleton",
       self._nameEditor = self.element.querySelector( ".ui-navigation-bar .ui-title" );
 	  //finds .ui-status in the DOM and hooks up to the necessary event handling.
 	  self._statusEditor = self.element.querySelector ( ".ui-navigation-bar .ui-status" );
+	  //set status if it already has a saved value
 	  self._statusEditor.value = self._note.status;
       self._backButton = self.element.querySelector(
         ".ui-navigation-bar .ui-bar-button-group.ui-align-left .ui-back-button" );

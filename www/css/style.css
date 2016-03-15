@@ -7,6 +7,9 @@
  *	Edited Date: 03/10/2016
  *	Edits: Added CSS to add styling for the status
  *
+ *	Edited Date: 03/15/2016
+ * 	Edits: Changed CSS for status to display icons instead of text.
+ *
  * Copyright (c) 2013 Packt Publishing
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this
  * software and associated documentation files (the "Software"), to deal in the Software
@@ -200,12 +203,27 @@ body.android {
 }
 
 /*position and style for the status*/
-.noteListView .ui-list-item .note-status {
+/*.noteListView .ui-list-item .note-status {
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;
   color: blue;
   text-align: center;
+}*/
+.noteListView .ui-list-item .note-status {
+	/*background-color: rgba(87, 52, 32, 0.5);*/
+  	float: left;
+ 	height: 30px;
+  	width: 30px;
+	margin-left: 50px;
+}
+
+.noteListView .ui-list-item .note-status.ui-glyph-file-cabinet {
+	background-color: #000;
+}
+
+.noteListView .ui-list-item .note-status.ui-glyph-push-pin {
+	background-color: #F00;
 }
 
 /* position and style the modified date */
